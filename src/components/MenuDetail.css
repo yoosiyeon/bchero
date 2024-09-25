@@ -1,0 +1,156 @@
+/* 메뉴 상세 컨테이너 */
+.menu-detail-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+    font-family: sans-serif;
+  }
+  
+
+
+/* 탭 버튼 컨테이너 스타일 */
+.tab-buttons {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+    gap: 0px; 
+  }
+  
+  .tab-button {
+    background-color: #f8f8f8;
+    border: 1px solid #e9e9e9;
+    color: #079B59;
+    padding: 10px; 
+    flex: 1 1 0; 
+    text-align: center; 
+    box-sizing: border-box; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* 활성화된 탭 버튼 스타일 */
+  .tab-button.active {
+    background-color: #CDEBDE;
+    color: #079B59;
+  }
+  
+  /* 탭 버튼 호버 스타일 */
+  .tab-button:hover {
+    background-color: #CDEBDE;
+    color: #079B59;
+  }
+
+
+
+
+  
+  
+  /* 탭 내용 */
+  .tab-content {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .menu-detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* 표 스타일 */
+  .menu-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .menu-detail-table th, .menu-detail-table td {
+    border: none;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .menu-detail-table th {
+    background-color: #f8f8f8;
+  }
+  
+  .menu-detail-table td {
+    background-color: #ffffff;
+  }
+  
+
+  .menu-detail-container h1{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+
+
+/* insta */
+  .instagram-link {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    gap: 10px; 
+    margin-bottom: 50px;
+  }
+  
+  .instagram-link-text {
+    text-decoration: none; 
+    color: #888;
+    font-size: 16px; 
+  }
+  
+  .instagram-link-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+
+/* 소비자주의사항 */
+  .headline-text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+
+  .footer-info p {
+    margin-bottom: 30px;
+  }
+  
+
+
+  .menudetail-order-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #CDEBDE;
+    color: #079B59;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .menudetail-order-button:hover {
+    background-color: #ade9cf;
+    transform: scale(1.01); 
+
+  }
+  

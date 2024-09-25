@@ -1,0 +1,132 @@
+/* Info 컨테이너 */
+.info-container {
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff; 
+    position: relative; 
+
+}
+  
+/* Info 제목 */
+.info-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333; 
+    font-weight: bold;
+}
+  
+/* 검색 컨테이너 */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+  
+/* 검색 입력창 */
+.info-search {
+    width: 100%;
+    max-width: 610px;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px; 
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+  
+/* 검색 버튼 */
+.search-button {
+    padding: 12px 24px;
+    font-size: 15px;
+    background-color: #079B59;
+    color: #fff;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 10px;
+}
+  
+/* Info 리스트 */
+.info-list {
+    margin-top: 20px;
+}
+  
+/* Info 아이템 */
+.info-item {
+    margin-bottom: 10px;
+}
+  
+/* 질문 부분 */
+.info-question {
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    padding: 15px 25px;
+    background-color: #E7F5EF; 
+    border-radius: 25px; 
+    transition: background-color 0.3s ease;
+    color: #333;
+    white-space: pre-line; 
+}
+  
+.info-question:hover {
+    background-color: #cae9db;
+}
+  
+/* 화살표 아이콘 */
+.arrow {
+    position: absolute;
+    right: 20px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    color: #FFBB56;
+    font-size: 16px;
+}
+  
+.arrow.open {
+    transform: rotate(180deg);
+}
+  
+/* 답변 부분 */
+.info-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0s ease-out, padding 0.15s ease-out;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #666;
+}
+  
+.info-answer.open {
+    max-height: 500px; 
+    padding: 15px 20px;
+}
+
+
+/* paging */
+.info-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .info-pagination button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .info-pagination button.active {
+    color: #079B59; /* 활성화된 페이지는 초록색 */
+  }
+  
+  .info-pagination button:hover {
+    color: grey; /* 호버 시 페이지 번호는 회색 */
+  }
+  

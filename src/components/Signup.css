@@ -1,0 +1,106 @@
+/* Signup.css */
+
+/* 기존 스타일 유지 */
+.signup-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* 포커스 시 스타일 추가 */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #079B59;
+}
+
+/* 로그인 버튼 스타일 */
+button[type="submit"] {
+    width: 100%; 
+    padding: 10px;
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    border: none; 
+    background-color: #079B59; 
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-bottom: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #057a46;
+}
+
+button[type="button"] {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+}
+
+
+.signup-back-button {
+    width: 100%; 
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    border: none; 
+    color: #079B59; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.signup-back-button:hover {
+    background-color: #ececec; 
+}
+
+/* 주소 부분 스타일 추가 */
+.address-container {
+    display: flex;
+    align-items: center;
+}
+
+.address-container input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+}

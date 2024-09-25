@@ -1,0 +1,139 @@
+.order-container {
+  padding: 10px;
+  max-width: 900px; /* 최대 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  font-family: Arial, sans-serif;
+}
+
+.order-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #333;
+}
+
+.order-order-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 세로 정렬 */
+  margin-bottom: 30px;
+  gap: 10px; /* 입력창과 버튼 사이의 간격을 조절 */
+}
+
+.order-order-search-container input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50px !important;
+  flex: 1; /* 입력창이 가능한 공간을 모두 차지하도록 설정 */
+  min-width: 0; /* 입력창이 너무 좁아지지 않도록 설정 */
+}
+
+.order-order-search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  background-color: #079B59;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap; /* 버튼 텍스트가 줄바꿈되지 않도록 설정 */
+}
+
+.order-order-search-container button:hover {
+  background-color: #03864b;
+}
+
+
+
+/* 여기서부터 메뉴 */
+.order-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+
+.order-menu-item {
+  padding: 15px;
+  background-color: #fff;
+  max-width: 100%;
+  line-height: 1.5;
+  position: relative; /* 절대 위치 지정 가능 */
+}
+
+.order-menu-content {
+  display: flex; /* 플렉스 박스 사용 */
+  justify-content: space-between; /* 두 요소 간의 공간을 균등하게 분배 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+.order-menu-details {
+  flex-grow: 1; /* 가능한 공간을 모두 차지하도록 설정 */
+  margin-right: 10px; /* 버튼과의 간격 조절 */
+}
+
+.order-menu-date {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #079B59;
+  color: #079B59;
+  /* padding: 5px; */
+}
+
+.order-menu-details p {
+  margin: 5px 0;
+  max-width: 500px;
+}
+
+
+/* 장바구니 담기 버튼 */
+.order-add-to-cart {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #079B59;
+  border-radius: 50px;
+  background-color: #ffff;
+  color: #079B59;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* 색상 전환 효과 */
+  white-space: nowrap; /* 버튼 텍스트가 줄바꿈되지 않도록 설정 */
+}
+
+
+/* 클릭된 상태 */
+.order-add-to-cart.active {
+  background-color: #1e7e34; /* 클릭 시 색상 */
+  color: #fff;
+}
+
+
+
+/* 장바구니 보러가기 버튼 */
+.order-link-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.order-link-button button {
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background-color: #E7F5EF;
+  color: #079B59;
+  cursor: pointer;
+  width: 100%; 
+  max-width: 900px; 
+  box-sizing: border-box; 
+  font-weight: bold;
+}
+
+.order-link-button button:hover {
+  background-color: #c4e7d8;
+}
+
+.order-highlight {
+  background-color: #b3ffde;
+}

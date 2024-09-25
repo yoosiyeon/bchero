@@ -1,0 +1,153 @@
+/* 이벤트 컨테이너 */
+.event-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative; 
+  margin-bottom: 50px;
+}
+
+/* 이벤트 제목 */
+.event-title {
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* 이미지 슬라이더 컨테이너 */
+.image-slider {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.event-image {
+  display: block; 
+  max-width: 80%;
+  margin: 0 auto; 
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+
+/* 페이징 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background-color: transparent; 
+  border: none; 
+  width: auto; 
+  height: auto; 
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: color 0.3s ease; 
+}
+
+.pagination-button.active {
+  color: #079B59; 
+  font-weight: bold;
+}
+
+.pagination-button:hover {
+  color: #079B59; 
+}
+
+
+.image-item {
+  text-align: left;
+  margin-bottom: 30px;
+  
+}
+
+.image-caption {
+  font-size: 14px;
+  color: #333;
+  display: block; 
+  max-width: 80%;
+  margin: 0 auto; 
+  font-weight: bold;
+
+}
+
+/* search */
+.event-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 버튼과 입력란을 수직 중앙 정렬 */
+  margin-bottom: 20px; /* 검색창과 이미지 간의 간격 */
+}
+
+.event-search-input {
+  padding: 10px; /* 내부 여백 */
+  font-size: 16px; /* 글자 크기 */
+  border: 1px solid #ccc; /* 테두리 색상 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  width: 300px; /* 원하는 넓이로 조정 */
+  outline: none; /* 포커스 시 외곽선 제거 */
+}
+
+.event-search-input::placeholder {
+  color: #aaa; /* 플레이스홀더 색상 */
+}
+
+.event-search-input:focus {
+  border-color: #079B59; /* 포커스 시 테두리 색상 변경 */
+}
+
+.event-search-button {
+  margin-left: 10px; /* 입력란과 버튼 사이 간격 */
+  padding: 10px 15px; /* 버튼 내부 여백 */
+  background-color: #079B59; /* 버튼 배경색 */
+  color: white; /* 버튼 글자색 */
+  border: none; /* 테두리 제거 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  cursor: pointer; /* 마우스 오버 시 포인터로 변경 */
+  font-size: 16px; /* 글자 크기 */
+}
+
+.event-search-button:hover {
+  background-color: #066B45; /* 마우스 오버 시 버튼 색상 변경 */
+}
+
+
+/* search */
+.event-search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* 검색 입력창과 버튼의 마진 조정 */
+}
+
+.event-search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* 테두리 색상 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  margin-right: 10px; /* 버튼과의 간격 조정 */
+  width: 250px; /* 원하는 입력창 너비 설정 */
+}
+
+.event-search-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #079B59; /* 버튼 배경 색상 */
+  color: white; /* 글자 색상 */
+  border: none; /* 테두리 없애기 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  cursor: pointer; /* 커서 변경 */
+  transition: background-color 0.3s; /* 배경색 전환 효과 */
+  width: 100px; /* 원하는 버튼 너비 설정 */
+}
+
+.event-search-button:hover {
+  background-color: #067c45; /* 호버 시 배경 색상 */
+}

@@ -1,0 +1,91 @@
+.order-history-container {
+  padding: 20px;
+  max-width: 1200px;
+  width: 700px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.order-history-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.order-history-order-item {
+  border: 1px solid #079B59;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.order-history-order-item p,
+.order-history-order-total p,
+.order-history-shipping-info p {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-history-order-item p strong,
+.order-history-shipping-info p strong {
+  color: #333;
+  text-align: left;
+}
+
+.order-history-order-item p span,
+.order-history-shipping-info p span {
+  color: #555;
+  text-align: right;
+}
+
+
+
+.order-history-shipping-info h2 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  text-align: left;
+  color: #079B59;
+  margin-top: 30px;
+}
+
+.order-history-shipping-info {
+  margin-bottom: 30px;
+  line-height: 1.8;
+  padding: 15px;
+
+}
+
+
+/* total 금액 */
+.order-history-order-total {
+  background-color: #E7F5EF;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+
+.order-history-home-button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  background-color: #E7F5EF;
+color: #079B59;
+font-weight: bold;
+padding: 15px;
+font-size: 17px;
+border-radius: 15px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+text-align: center;
+}
+
+.order-history-home-button:hover {
+  background-color: #9fdbc1;
+}

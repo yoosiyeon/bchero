@@ -1,0 +1,154 @@
+.payment-complete-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative; /* 부모 요소 기준 위치 설정 */
+  margin-bottom: 50px;
+}
+
+.payment-complete-container h1 {
+  text-align: center;
+  color: #333; /* 어두운 색상 */
+  font-size: 25px;
+}
+
+
+
+.payment-complete-shipping-info h2 {
+  text-align: left;
+  color: #079B59;
+  margin-bottom: 20px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.payment-complete-shipping-info {
+  padding: 15px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.payment-complete-order-item {
+  border: 1px solid #079B59;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+
+
+/* 상품 및 배송 정보의 왼쪽/오른쪽 정렬 */
+.payment-complete-order-item p,
+.payment-complete-order-total p {
+  display: flex;
+  justify-content: space-between; /* 왼쪽과 오른쪽 정렬 */
+  margin: 10px 0; /* 요소 사이에 간격 추가 */
+}
+
+.payment-complete-order-item,
+.payment-complete-order-total strong {
+  flex: 1; /* 왼쪽 텍스트 공간 확보 */
+  color: #555;
+}
+
+.payment-complete-order-item span,
+.payment-complete-order-total span {
+  flex: 1; /* 오른쪽 텍스트 공간 확보 */
+  text-align: right; /* 오른쪽 정렬 */
+  /* font-weight: bold; */
+  color: #343A40;
+  font-weight: bold;
+}
+
+
+.payment-complete-order-total {
+padding: 15px;
+display: flex; /* 플렉스 박스 사용 */
+flex-direction: column; /* 세로 방향으로 배치 */
+background-color: #E7F5EF;
+border-radius: 15px;
+max-width: 100%;
+margin: 0 auto; /* 좌우 중앙 정렬 */
+font-size: 18px;
+line-height: 1;
+font-weight: bold;
+}
+
+
+
+
+/* 배송지 정보 */
+
+.payment-complete-shipping-info p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.payment-complete-shipping-info .label {
+  text-align: left;
+  color: #555; /* 레이블의 색상 */
+}
+
+.payment-complete-shipping-info .data {
+  text-align: right;
+  color: #333; 
+  font-weight: bold; 
+}
+
+
+
+
+
+/* 버튼 컨테이너 스타일 */
+.payment-complete-buttons-container {
+display: flex;
+}
+
+
+.payment-complete-button-home-button {
+background-color: #E7F5EF;
+color: #079B59;
+font-weight: bold;
+border: none;
+padding: 15px;
+font-size: 17px;
+border-radius: 15px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+flex: 1; 
+margin: 0 3px; 
+text-align: center;
+}
+
+.payment-complete-order-history-button {
+background-color: #fff; 
+color: #555;
+border: 1px solid #ddd;
+font-weight: bold;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+font-size: 18px;
+margin: 0 5px; 
+cursor: pointer;
+border-radius: 15px; 
+flex: 1; 
+transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+
+.payment-complete-button-home-button:hover {
+background-color: #9fdbc1; 
+transform: scale(1.01);
+}
+
+.payment-complete-order-history-button:hover {
+background-color: #f3f3f3; 
+transform: scale(1.01);
+}
+

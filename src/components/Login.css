@@ -1,0 +1,73 @@
+/* 전체 컨테이너 스타일 */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+  }
+  
+  /* 폼 스타일 */
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* 폼 그룹 스타일 */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* 입력 필드 스타일 */
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #079B59;
+  }
+  
+  /* 에러 메시지 스타일 */
+  .error-message {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+  }
+  
+  /* 로그인 버튼 스타일 */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #079B59 !important;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #057a46 !important;
+  }
+  
+  .back-button {
+    width: 100%;
+    padding: 12px !important;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }

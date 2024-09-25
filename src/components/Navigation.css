@@ -1,0 +1,163 @@
+/* 전체 네비게이션 바 스타일 */
+.navigation-bar {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 9px;
+  background-color: #079B59;
+  color: #fff;
+  position: relative;
+  z-index: 1000;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+/* 로고 스타일 */
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}
+
+/* 햄버거 메뉴 스타일 */
+.nav-hamburger {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #fdfdfd;
+  color: #079B59;
+  font-weight: bold;
+  font-size: 20px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  z-index: 1900;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  transform: translateX(100%);
+}
+
+/* 사이드바 헤더 스타일 */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 950;
+}
+
+/* 'close' 버튼 스타일 */
+.close-btn {
+  background: none;
+  border: none;
+  color: #079B59;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* 사이드바 내용 스타일 */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem;
+  flex-grow: 1;
+}
+
+/* 메뉴 항목 스타일 */
+.sidebar-content a {
+  color: #079B59;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+}
+
+.sidebar-content span {
+  color: #555;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  margin-top: -30px;
+  font-weight: bold;
+}
+
+/* 메뉴 항목 hover 스타일 */
+.sidebar-content a:hover {
+  background-color: #E7F5EF;
+  color: #079B59;
+  transform: scale(1.05);
+}
+
+/* 로그아웃 버튼 */
+.logout-button {
+  display: inline-block;
+  padding: 5px;
+  font-size: 14px;
+  color: #555;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  margin-top: -20px;
+}
+
+.logout-button:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .main-bottom {
+      max-width: 98%;
+  }
+}

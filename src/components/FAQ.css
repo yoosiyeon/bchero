@@ -1,0 +1,154 @@
+/* FAQ 컨테이너 */
+.faq-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  overflow: visible;
+}
+
+/* FAQ 제목 */
+.faq-title {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 검색 컨테이너 */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* 검색 입력창 */
+.faq-search {
+  width: 100%;
+  max-width: 610px;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* 검색 버튼 */
+.search-button {
+  padding: 12px 24px;
+  font-size: 15px;
+  background-color: #079B59;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-left: 10px;
+}
+
+/* FAQ 리스트 */
+.faq-list {
+  margin-top: 20px;
+}
+
+/* FAQ 아이템 */
+.faq-item {
+  margin-bottom: 10px;
+}
+
+/* 질문 부분 */
+.faq-question {
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+  padding: 15px 25px;
+  background-color: #E7F5EF;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  color: #333;
+  white-space: pre-line;
+}
+
+.faq-question:hover {
+  background-color: #cae9db;
+}
+
+/* 화살표 아이콘 */
+.arrow {
+  position: absolute;
+  right: 20px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  color: #FFBB56;
+  font-size: 16px;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+/* 답변 부분 */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0s ease-out, padding 0.15s ease-out;
+  padding: 0 20px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.faq-answer.open {
+  max-height: 500px;
+  padding: 15px 20px;
+}
+
+/* 뒤로가기 버튼 */
+.goback-button {
+  position: fixed;
+  top: 115px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px; 
+  height: 40px;
+  padding: 0; 
+  z-index: 1000; 
+}
+
+.goback-button img {
+  width: 50px; 
+  height: 50px; 
+  object-fit: contain; 
+}
+
+
+
+/* paging */
+.faq-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.faq-pagination button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.faq-pagination button.active {
+  color: #079B59 /* 활성화된 숫자는 초록색 */
+}
+
+.faq-pagination button:hover {
+  color: grey; /* 호버 시 숫자는 회색 */
+}

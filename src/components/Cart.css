@@ -1,0 +1,190 @@
+/* 장바구니 전체 컨테이너 */
+.cart-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative; /* 부모 요소 기준 위치 설정 */
+  margin-bottom: 50px;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+/* 각 장바구니 항목 스타일 */
+.cart-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #079B59;
+}
+
+.item-details {
+  position: relative;
+}
+
+.item-details p {
+  margin: 5px 0;
+  font-family: 'Noto Sans', sans-serif;
+  color: #555;
+  font-size: 17px;
+  margin-bottom: 5px;
+
+}
+
+
+/* 날짜 텍스트 강조 */
+.date {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* 항목 구분선 스타일 */
+.item-divider {
+  margin: 10px 0;
+  border: none;
+  border-top: 2px solid #079B59;
+  
+}
+
+/* 수량 조정 버튼 */
+.quantity-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.quantity-container button {
+  background-color: #e0e0e0;
+  border: none;
+  font-size: 15px;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border-radius: 55px;
+  cursor: pointer;
+}
+
+.quantity-container button:hover {
+  background-color: #d1d1d1;
+}
+
+.quantity-container button:first-of-type {
+  margin-left: 0; /* 첫 번째 버튼의 왼쪽 간격 제거 */
+}
+
+/* 1.5배 적용 버튼 스타일 */
+.apply-1-5x-button {
+  background-color: transparent;
+  color: #079B59;
+  border: 2px solid #079B59;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.apply-1-5x-button.highlighted {
+  background-color: #079B59;; /* 하이라이트된 경우 색상 변경 */
+  color: #fff;
+}
+
+.apply-1-5x-button:hover {
+  background-color: #E7F5EF;
+  border-color: #079B59;
+}
+
+/* 삭제 버튼 스타일 */
+.delete-button {
+  background-color: #ff7d65;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  /* bottom: 0px; */
+  right: 0px;
+  width: 70px;
+  /* height: 20px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.delete-button:hover {
+  background-color: #e5533d;
+}
+
+/* 배송비와 총 가격 스타일 */
+.delivery-cost, .total-price {
+  text-align: right;
+  font-family: 'Noto Sans', sans-serif;
+  color: #333;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.total-price span {
+  color:#079B59; /* 총 가격 숫자 색상 */
+}
+
+/* 주문하기 버튼 스타일 */
+.order-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.order-now-button {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #CDEBDE;
+  color: #079B59;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%; 
+  box-sizing: border-box; 
+  line-height: 1.5; 
+  text-align: center; 
+  font-size: 20px;
+}
+
+.order-now-button:hover {
+  background-color: #9fdbc1; 
+}
+
+
+/* 뒤로가기 버튼 */
+.goback-button-cart {
+  position: relative; 
+  top: 65px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 40px; 
+  padding: 0; 
+  z-index: 1000; 
+}
+
+.goback-button-cart img {
+  width: 50px; 
+  height: 50px; 
+  object-fit: contain; 
+}
